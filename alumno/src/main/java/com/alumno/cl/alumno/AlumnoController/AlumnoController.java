@@ -15,7 +15,7 @@ public class AlumnoController {
         return "LISTADO ALUMNO";
     }
     
-    @GetMapping("api/v1/alumno/{id}")
+    @GetMapping("api/v1/alumnos/{id}")
     public String getAlumno(@PathVariable("id") int id) {
         return "DETALLE ALUMNO " + id;
 }

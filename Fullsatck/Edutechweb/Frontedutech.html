@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduTech Innovators SPA</title>
     <link rel="stylesheet" href="fondoedutech.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
+            <div class="logo">EduTech</div>
             <ul class="menu">
                 <li><a href="#intro">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
@@ -30,43 +32,69 @@
 
         <section id="servicios" class="servicios">
             <h2>Nuestros Servicios</h2>
-            <ul>
-                <li>Desarrollo de Plataformas Educativas</li>
-                <li>Implementación de Microservicios para Escalabilidad</li>
-                <li>Consultoría en Transformación Digital Educativa</li>
-                <li>Soporte y Actualización de Sistemas de Gestión de Aprendizaje</li>
-            </ul>
+            <div class="servicios-grid">
+                <div class="servicio">
+                    <h3>Desarrollo de Plataformas</h3>
+                    <p>Diseñamos sistemas educativos a medida, fáciles de usar y altamente escalables.</p>
+                </div>
+                <div class="servicio">
+                    <h3>Microservicios para Escalabilidad</h3>
+                    <p>Modernizamos tus sistemas para soportar miles de usuarios concurrentes de forma eficiente.</p>
+                </div>
+                <div class="servicio">
+                    <h3>Consultoría en Educación Digital</h3>
+                    <p>Te asesoramos en tu camino hacia la transformación digital educativa.</p>
+                </div>
+                <div class="servicio">
+                    <h3>Soporte Técnico 24/7</h3>
+                    <p>Brindamos asistencia constante para garantizar el correcto funcionamiento de tus plataformas.</p>
+                </div>
+            </div>
         </section>
 
         <section id="ubicaciones" class="ubicaciones">
             <h2>Nuestras Oficinas</h2>
             <p>Estamos creciendo y acercándonos a más usuarios cada día:</p>
             <ul>
-                <li><strong>Providencia, Santiago</strong> - Casa matriz</li>
-                <li><strong>Valparaíso</strong> - Oficina regional de soporte</li>
-                <li><strong>La Serena</strong> - Centro de innovación educativa</li>
+                <li><strong>Providencia, Santiago</strong> - Casa matriz y centro de operaciones estratégicas.</li>
+                <li><strong>Valparaíso</strong> - Oficina regional enfocada en soporte técnico y capacitación.</li>
+                <li><strong>La Serena</strong> - Centro de innovación y desarrollo educativo.</li>
             </ul>
         </section>
 
         <section id="contacto" class="contacto">
             <h2>Contáctanos</h2>
             <form>
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre" required><br><br>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
 
-                <label for="correo">Correo Electrónico:</label><br>
-                <input type="email" id="correo" name="correo" required><br><br>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
 
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" class="btn">Enviar Mensaje</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 EduTech Innovators SPA. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <p>&copy; 2025 EduTech Innovators SPA. Todos los derechos reservados.</p>
+            <div class="socials">
+                <a href="#">Facebook</a> | 
+                <a href="#">LinkedIn</a> | 
+                <a href="#">Instagram</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
+

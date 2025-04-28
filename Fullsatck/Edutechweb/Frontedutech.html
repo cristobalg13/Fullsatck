@@ -3,28 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduTech</title>
+    <title>EduTech Innovators SPA</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenidos a EduTech</h1>
-        <p>Empresa dedicada a la educación digital de calidad</p>
+        <nav>
+            <ul class="menu">
+                <li><a href="#intro">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#ubicaciones">Oficinas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Bienvenidos a EduTech Innovators SPA</h1>
+            <p>Transformando la educación digital de calidad en Chile</p>
+        </div>
     </header>
 
     <main>
-        <section class="intro">
+        <section id="intro" class="intro">
             <h2>¿Qué hacemos?</h2>
-            <p>En EduTech Innovators SPA ofrecemos plataformas educativas en línea accesibles, modernas y de alta calidad.</p>
+            <p>Ofrecemos plataformas educativas en línea accesibles, modernas y de alta calidad, ayudando a instituciones y estudiantes a alcanzar sus metas académicas.</p>
         </section>
 
-        <section class="ubicaciones">
-            <h2>Nuestras Oficinas</h2>
+        <section id="servicios" class="servicios">
+            <h2>Nuestros Servicios</h2>
             <ul>
-                <li>Providencia, Santiago</li>
-                <li>Valparaíso</li>
-                <li>La Serena</li>
+                <li>Desarrollo de Plataformas Educativas</li>
+                <li>Implementación de Microservicios para Escalabilidad</li>
+                <li>Consultoría en Transformación Digital Educativa</li>
+                <li>Soporte y Actualización de Sistemas de Gestión de Aprendizaje</li>
             </ul>
+        </section>
+
+        <section id="ubicaciones" class="ubicaciones">
+            <h2>Nuestras Oficinas</h2>
+            <p>Estamos creciendo y acercándonos a más usuarios cada día:</p>
+            <ul>
+                <li><strong>Providencia, Santiago</strong> - Casa matriz</li>
+                <li><strong>Valparaíso</strong> - Oficina regional de soporte</li>
+                <li><strong>La Serena</strong> - Centro de innovación educativa</li>
+            </ul>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <h2>Contáctanos</h2>
+            <form>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="correo">Correo Electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
 
